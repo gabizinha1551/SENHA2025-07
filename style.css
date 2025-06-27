@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+
+
+:root{
+
+    --branco: white;
+    --cor-de-fundo: #f188c6;
+    --fundo-da-senha: #00244d;
+    --fundo-texto: #001e40;
+    --borda: #f3f3f3;
+    --gravitasone: 'Gravitas One' monospace;
+}
+
+body{
+
+    color:var(--branco);
+    background-color: var(--cor-de-fundo);
+    font-family: var(--gravitasone);
+}
+
+.titulo-principal{
+
+    font-family:var(--gravitasone);
+    font-size: 32px;
+}
+
+.titulo-secundario{
+    font-size: 24px;
+}
+
+.conteudo-titulo{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.conteudo-senha{
+  
+    margin-top: 80px;
+    background:var(--fundo-da-senha);
+    padding: 24px;
+    border-bottom: 6px solid var(--borda);
+}
+
+#campo-senha{
+
+    background-color: var(--cor-de-fundo);
+    border: none;
+    color:var(--branco);
+    font-family:var(--gravitasone);
+    font-size: 40px;
+    width: 70%;
+}
