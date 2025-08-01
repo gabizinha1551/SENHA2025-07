@@ -32,5 +32,29 @@ function aumentaTamanho(){
      }
 
  numeroSenha.textContent= tamanhoSenha;
- feraSenha();
+ geraSenha();
+} 
+
+   function geraSenha(){
+
+      let alfabeto= '';
+      if (checkbox[0],checked)alfabeto+=letrasMaiusculas;
+      if (checkbox[1],checked)alfabeto+=letrasMinusculas;
+      if (checkbox[2],checked)alfabeto+=numeros;
+      if (checkbox[3],checked)alfabeto+=simbolus;
+
+      if(alfabeto.length===0){
+   campoSenha.value = '';
+   classificarSenha(1);
+   return;
+      }
+        let senha ='';
+        for(let i=0; i < tamanhoSenha; i++);{
+        const numeroAleatorio = Math.floor(Math.random()* alfabeto.length);
+   senha+=alfabeto[numeroAleatorio];
+   }
+
+     campoSenha.value=senha;
+     classificarSenha(alfabeto.length);
+
 }
